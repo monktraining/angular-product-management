@@ -1,0 +1,7 @@
+﻿<input type="text" placeholder="Search" id="txtSearch" style="width: 277px;" />
+<pre>
+{{filteredProducts | json}}
+</pre>
+<ul style="width: 277px;">
+    <li ng-repeat="prod in filteredProducts">{{prod.Name}}</li>
+</ul>
