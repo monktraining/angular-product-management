@@ -3,11 +3,12 @@
 
 var productService = (function () {
 
-    function productService($http) {
+    function productService($http,$resource) {
         this.$http = $http;
+        this.$resource = $resource;
     };
 
-    productService.prototype.get = function () {
+    productService.prototype.get = function () {        
         return this.$http.get("/api/products");
     };
 
@@ -32,6 +33,6 @@ var productService = (function () {
 
 angular
     .module('product')
-    .service('productService', ["$http", function ($http) {
-        return new productService($http);
+    .service('productService', ["$http","$resource", function ($http,$resource) {
+        return new productService($http,$resource);
     }]);

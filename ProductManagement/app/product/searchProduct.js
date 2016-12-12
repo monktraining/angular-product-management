@@ -11,8 +11,7 @@
                 .on("keypress",
                     function() {
                         var val = angular.element("#txtSearch").val();
-                        scope.$emit("searchValue", { searchData: val });
-                        scope.$apply();
+                        scope.$emit("searchValue", { searchData: val });                        
                     });
         };
         this.templateUrl = "/app/product/search.html";

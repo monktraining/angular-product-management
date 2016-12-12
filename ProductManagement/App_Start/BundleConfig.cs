@@ -25,10 +25,10 @@ namespace ProductManagement
                 "~/Scripts/ng-file-upload/ng-file-upload-all.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/app").Include(
-                "~/app/product/product.module.js",
-                "~/app/product/product.route.js",
-                "~/app/product/product.service.js", 
-                "~/app/product/product.controller.js",
+                "~/app/product-ts/product.module.js",
+                "~/app/product-ts/product.route.js",
+                "~/app/product-ts/product.service.js", 
+                "~/app/product-ts/product.controller.js",
                 "~/app/product/searchProduct.js",
                 "~/app/app.js"));
 

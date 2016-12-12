@@ -17,6 +17,7 @@
                     if (_this.$scope.products[product].Name.indexOf(value) > -1)
                         _this.$scope.filteredProducts.push(_this.$scope.products[product]);
                 }
+                
             });
         this.initialize();
     }
